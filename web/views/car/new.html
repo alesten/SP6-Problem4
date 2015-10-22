@@ -1,0 +1,29 @@
+<form ng-submit="save()" novalidate>
+    <div class="form-group">
+        <label class="label label-info">Year</label>
+        <input type="number" placeholder="Year" class="form-control" ng-model="car.year"/>
+    </div>
+    <div class="form-group">
+        <label class="label label-info">Registered</label>
+        <input type="date" class="form-control" ng-model="car.registered"/>
+    </div>
+    <div class="form-group">
+        <label class="label label-info">Make</label>
+        <input placeholder="Make" class="form-control" ng-model="car.make"/>
+    </div>
+    <div class="form-group">
+        <label class="label label-info">Model</label>
+        <input placeholder="Model" class="form-control" ng-model="car.model"/>
+    </div>
+    <div class="form-group">
+        <label class="label label-info">Description</label>
+        <input placeholder="Description" class="form-control" ng-model="car.description"/>
+    </div>
+    <div class="form-group">
+        <label class="label label-info">Price</label>
+        <input type="number" placeholder="Price" class="form-control" ng-model="car.price"/>
+    </div>
+
+    <input type="hidden" ng-model="car.id"/>
+    <input class="btn btn-info" type="submit" value="Save"/>
+</form>
